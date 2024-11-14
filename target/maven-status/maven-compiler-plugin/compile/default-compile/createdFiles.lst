@@ -1,0 +1,9 @@
+com\example\app\repository\RoleRepository.class
+com\example\app\model\User.class
+com\example\app\config\SecurityConfig.class
+com\example\app\controller\LoginController.class
+com\example\app\repository\UserRepository.class
+com\example\app\controller\UserController.class
+com\example\app\SpringSecurityApplication.class
+com\example\app\service\UserService.class
+com\example\app\model\Role.class

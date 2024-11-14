@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/your_database_name
+    username: root
+    password: 567qweasdzxc
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update  # Для автоматического создания и обновления таблиц (используйте update, validate или none в продакшн)
+    show-sql: true  # Показывает SQL-запросы в консоли
+    properties:
+      hibernate:
+        format_sql: true  # Форматирует SQL-запросы для лучшей читаемости
+
+  main:
+    allow-circular-references: true  # Включает разрешение циклических зависимостей (используйте осторожно)
+
+server:
+  port: 8080  # Порт, на котором работает приложение
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG  # Уровень логирования для web-компонентов
+    org.hibernate.SQL: DEBUG       # Логирование SQL-запросов
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE  # Логирование параметров SQL-запросов
